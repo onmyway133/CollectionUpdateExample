@@ -5,7 +5,7 @@ class CollectionController: UIViewController, UICollectionViewDataSource, UIColl
 
   var items: [String] = []
   var cellColor: UIColor?
-  private var collectionView: UICollectionView!
+  var collectionView: UICollectionView!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -29,6 +29,14 @@ class CollectionController: UIViewController, UICollectionViewDataSource, UIColl
   func update(items: [String]) {
     self.items = items
     collectionView.reloadData()
+  }
+
+  func imageForCell(indexPath: IndexPath) -> UIImage {
+    let cell = collectionView.cellForItem(at: indexPath)!
+    let render = UIGraphicsImageRenderer(size: cell.frame.size)
+    return render.image(actions: { (context) in
+      cell.drawHierarchy(in: cell.frame, afterScreenUpdates: false)
+    })
   }
 
   // MARK: - UICollectionViewDataSource
