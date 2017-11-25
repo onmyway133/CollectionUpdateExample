@@ -1,25 +1,23 @@
-//
-//  ViewController.swift
-//  CollectionUpdateExample
-//
-//  Created by Khoa Pham on 25.11.2017.
-//  Copyright © 2017 Fantageek. All rights reserved.
-//
-
 import UIKit
+import Anchors
+import Omnia
 
 class ViewController: UIViewController {
 
+  let collectionController = CollectionController()
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+
+    omnia_add(chilController: collectionController)
+    activate(
+      collectionController.view.anchor
+        .edges.equal.to(view.safeAreaLayoutGuide.anchor)
+        .insets(10)
+    )
+
+    collectionController.cellColor = UIColor(hex: "3498db")
+    collectionController.update(items: Array(0..<100).map(String.init))
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
-
 }
 
