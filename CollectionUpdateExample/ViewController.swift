@@ -25,7 +25,9 @@ class ViewController: UIViewController {
       "reset", "insert after", "insert before",
       "delete after", "delete before",
       "delete insert after", "delete insert before",
-      "delete before insert after"
+      "delete before insert after",
+      "insert delete after", "insert delete before",
+      "insert after delete before"
     ]
 
     let titleView = TitleView(
@@ -64,6 +66,12 @@ class ViewController: UIViewController {
       deleteInsertBefore()
     case 7:
       deleteBeforeInsertAfter()
+    case 8:
+      insertDeleteAfter()
+    case 9:
+      insertDeleteBefore()
+    case 10:
+      insertAfterDeleteBefore()
     default:
       break
     }
@@ -145,6 +153,49 @@ class ViewController: UIViewController {
       let indexPaths = Array(0...2).map { IndexPath(item: $0, section: 0) }
       collectionController.collectionView.deleteItems(at: indexPaths)
       collectionController.collectionView.insertItems(at: [IndexPath(item: 3, section: 0)])
+    }, completion: nil)
+  }
+
+  func insertDeleteAfter() {
+    collectionController.items.append(contentsOf: ["g", "h", "i"])
+    collectionController.items.removeLast()
+
+    collectionController.collectionView.performBatchUpdates({
+      collectionController.collectionView.deleteItems(at: [IndexPath(item: 5, section: 0)])
+
+      let indexPaths = Array(5...7).map { IndexPath(item: $0, section: 0) }
+      collectionController.collectionView.insertItems(at: indexPaths)
+    }, completion: nil)
+  }
+
+  func insertDeleteBefore() {
+    collectionController.items.insert("g", at: 0)
+    collectionController.items.insert("h", at: 1)
+    collectionController.items.insert("i", at: 2)
+
+    collectionController.items.removeFirst()
+
+    collectionController.collectionView.performBatchUpdates({
+      collectionController.collectionView.deleteItems(at: [IndexPath(item: 0, section: 0)])
+
+      let indexPaths = Array(0...2).map { IndexPath(item: $0, section: 0) }
+      collectionController.collectionView.insertItems(at: indexPaths)
+    }, completion: nil)
+  }
+
+  func insertAfterDeleteBefore() {
+    collectionController.items.append(contentsOf: ["g", "h", "i"])
+
+    collectionController.items.removeFirst()
+    collectionController.items.removeFirst()
+    collectionController.items.removeFirst()
+
+    collectionController.collectionView.performBatchUpdates({
+      let deleteIndexPaths = Array(0...2).map { IndexPath(item: $0, section: 0) }
+      collectionController.collectionView.deleteItems(at: deleteIndexPaths)
+
+      let insertIndexPaths = Array(3...5).map { IndexPath(item: $0, section: 0) }
+      collectionController.collectionView.insertItems(at: insertIndexPaths)
     }, completion: nil)
   }
 }
