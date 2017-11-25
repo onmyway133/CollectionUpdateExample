@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		496E55DC0B77DA3693A8B55C /* Pods_CollectionUpdateExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08DB43D9F7B627581E0A41B9 /* Pods_CollectionUpdateExample.framework */; };
-		76D47403A5A1B0F9A19FEE35 /* Pods_DragAndDrop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F81D7CC1AC282E8712E36E /* Pods_DragAndDrop.framework */; };
+		1F45DDD4C86B505AF5015EDB /* Pods_DragAndDrop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D871CE6451915C187935853C /* Pods_DragAndDrop.framework */; };
+		CCAE0659CB4FF3772A315DBE /* Pods_CollectionUpdateExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9A02A3346826D8986F4447 /* Pods_CollectionUpdateExample.framework */; };
 		D240E0F61FC99A20000AB5AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D240E0F51FC99A20000AB5AB /* AppDelegate.swift */; };
 		D240E0F81FC99A20000AB5AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D240E0F71FC99A20000AB5AB /* ViewController.swift */; };
 		D240E0FB1FC99A20000AB5AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D240E0F91FC99A20000AB5AB /* Main.storyboard */; };
@@ -26,10 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		01B022C39E8131ACE5D1DF6B /* Pods-DragAndDrop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragAndDrop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DragAndDrop/Pods-DragAndDrop.debug.xcconfig"; sourceTree = "<group>"; };
-		08DB43D9F7B627581E0A41B9 /* Pods_CollectionUpdateExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionUpdateExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AAD352FE810D39D1A48A01F /* Pods-CollectionUpdateExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionUpdateExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionUpdateExample/Pods-CollectionUpdateExample.release.xcconfig"; sourceTree = "<group>"; };
-		C699D9722DC23F2DA10748BB /* Pods-CollectionUpdateExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionUpdateExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionUpdateExample/Pods-CollectionUpdateExample.debug.xcconfig"; sourceTree = "<group>"; };
+		3AF4DD127E5DDDA64D0DEE7D /* Pods-CollectionUpdateExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionUpdateExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionUpdateExample/Pods-CollectionUpdateExample.debug.xcconfig"; sourceTree = "<group>"; };
+		489616F230A012BADB8D1176 /* Pods-DragAndDrop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragAndDrop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DragAndDrop/Pods-DragAndDrop.debug.xcconfig"; sourceTree = "<group>"; };
+		9D9A02A3346826D8986F4447 /* Pods_CollectionUpdateExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionUpdateExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8D02EE87A30CC320FB4D14A /* Pods-CollectionUpdateExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionUpdateExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionUpdateExample/Pods-CollectionUpdateExample.release.xcconfig"; sourceTree = "<group>"; };
+		BD24F6C9EA73C4531FE8E0AD /* Pods-DragAndDrop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragAndDrop.release.xcconfig"; path = "Pods/Target Support Files/Pods-DragAndDrop/Pods-DragAndDrop.release.xcconfig"; sourceTree = "<group>"; };
 		D240E0F21FC99A20000AB5AB /* CollectionUpdateExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionUpdateExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D240E0F51FC99A20000AB5AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D240E0F71FC99A20000AB5AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,8 +47,7 @@
 		D240E1191FC99A3F000AB5AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D240E11D1FC99A64000AB5AB /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		D240E1231FC99B3B000AB5AB /* CollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionController.swift; sourceTree = "<group>"; };
-		D4055B2CEF9C000C98056640 /* Pods-DragAndDrop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragAndDrop.release.xcconfig"; path = "Pods/Target Support Files/Pods-DragAndDrop/Pods-DragAndDrop.release.xcconfig"; sourceTree = "<group>"; };
-		E7F81D7CC1AC282E8712E36E /* Pods_DragAndDrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragAndDrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D871CE6451915C187935853C /* Pods_DragAndDrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragAndDrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				496E55DC0B77DA3693A8B55C /* Pods_CollectionUpdateExample.framework in Frameworks */,
+				CCAE0659CB4FF3772A315DBE /* Pods_CollectionUpdateExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,31 +63,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76D47403A5A1B0F9A19FEE35 /* Pods_DragAndDrop.framework in Frameworks */,
+				1F45DDD4C86B505AF5015EDB /* Pods_DragAndDrop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5521BCB15298CD436B0F94FC /* Frameworks */ = {
+		302974DF1270A48A5FF03FFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				08DB43D9F7B627581E0A41B9 /* Pods_CollectionUpdateExample.framework */,
-				E7F81D7CC1AC282E8712E36E /* Pods_DragAndDrop.framework */,
+				9D9A02A3346826D8986F4447 /* Pods_CollectionUpdateExample.framework */,
+				D871CE6451915C187935853C /* Pods_DragAndDrop.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B4E8F663AC8AF1633980B647 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C699D9722DC23F2DA10748BB /* Pods-CollectionUpdateExample.debug.xcconfig */,
-				9AAD352FE810D39D1A48A01F /* Pods-CollectionUpdateExample.release.xcconfig */,
-				01B022C39E8131ACE5D1DF6B /* Pods-DragAndDrop.debug.xcconfig */,
-				D4055B2CEF9C000C98056640 /* Pods-DragAndDrop.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		D240E0E91FC99A20000AB5AB = {
@@ -96,8 +85,8 @@
 				D240E0F41FC99A20000AB5AB /* CollectionUpdateExample */,
 				D240E10C1FC99A3F000AB5AB /* DragAndDrop */,
 				D240E0F31FC99A20000AB5AB /* Products */,
-				B4E8F663AC8AF1633980B647 /* Pods */,
-				5521BCB15298CD436B0F94FC /* Frameworks */,
+				E83A893DE453B5D9929B7ACC /* Pods */,
+				302974DF1270A48A5FF03FFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +127,17 @@
 			path = DragAndDrop;
 			sourceTree = "<group>";
 		};
+		E83A893DE453B5D9929B7ACC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AF4DD127E5DDDA64D0DEE7D /* Pods-CollectionUpdateExample.debug.xcconfig */,
+				B8D02EE87A30CC320FB4D14A /* Pods-CollectionUpdateExample.release.xcconfig */,
+				489616F230A012BADB8D1176 /* Pods-DragAndDrop.debug.xcconfig */,
+				BD24F6C9EA73C4531FE8E0AD /* Pods-DragAndDrop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,12 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D240E1041FC99A20000AB5AB /* Build configuration list for PBXNativeTarget "CollectionUpdateExample" */;
 			buildPhases = (
-				AF6CB655DBE9A466647B122C /* [CP] Check Pods Manifest.lock */,
+				E1E8F6F1DB847F9CAAE389AB /* [CP] Check Pods Manifest.lock */,
 				D240E0EE1FC99A20000AB5AB /* Sources */,
 				D240E0EF1FC99A20000AB5AB /* Frameworks */,
 				D240E0F01FC99A20000AB5AB /* Resources */,
-				44E58EA580837A8900007BA2 /* [CP] Embed Pods Frameworks */,
-				12EF5A72760E4E8E2DC853AB /* [CP] Copy Pods Resources */,
+				C244A1980765CABEF729819D /* [CP] Embed Pods Frameworks */,
+				22C525E5ECB897975057CCCE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,12 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D240E11A1FC99A3F000AB5AB /* Build configuration list for PBXNativeTarget "DragAndDrop" */;
 			buildPhases = (
-				DD1033BB6474603CE7FC9AEC /* [CP] Check Pods Manifest.lock */,
+				F466641B8904DC6B8BDEE9B9 /* [CP] Check Pods Manifest.lock */,
 				D240E1071FC99A3F000AB5AB /* Sources */,
 				D240E1081FC99A3F000AB5AB /* Frameworks */,
 				D240E1091FC99A3F000AB5AB /* Resources */,
-				72AE8130D70EAD80C80D83FC /* [CP] Embed Pods Frameworks */,
-				FE5849C53D3A1023DE58C998 /* [CP] Copy Pods Resources */,
+				8F73FE03BF743A7795C1069A /* [CP] Embed Pods Frameworks */,
+				4A14DF2BF1951AD1D45C4B6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,7 +244,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12EF5A72760E4E8E2DC853AB /* [CP] Copy Pods Resources */ = {
+		22C525E5ECB897975057CCCE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,29 +259,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CollectionUpdateExample/Pods-CollectionUpdateExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		44E58EA580837A8900007BA2 /* [CP] Embed Pods Frameworks */ = {
+		4A14DF2BF1951AD1D45C4B6B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CollectionUpdateExample/Pods-CollectionUpdateExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Anchors/Anchors.framework",
-				"${BUILT_PRODUCTS_DIR}/Dropdown/Dropdown.framework",
-				"${BUILT_PRODUCTS_DIR}/Omnia/Omnia.framework",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Anchors.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dropdown.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Omnia.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CollectionUpdateExample/Pods-CollectionUpdateExample-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DragAndDrop/Pods-DragAndDrop-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		72AE8130D70EAD80C80D83FC /* [CP] Embed Pods Frameworks */ = {
+		8F73FE03BF743A7795C1069A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,13 +282,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DragAndDrop/Pods-DragAndDrop-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Anchors/Anchors.framework",
-				"${BUILT_PRODUCTS_DIR}/Dropdown/Dropdown.framework",
+				"${BUILT_PRODUCTS_DIR}/Dropdowns/Dropdowns.framework",
 				"${BUILT_PRODUCTS_DIR}/Omnia/Omnia.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Anchors.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dropdown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dropdowns.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Omnia.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +296,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DragAndDrop/Pods-DragAndDrop-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AF6CB655DBE9A466647B122C /* [CP] Check Pods Manifest.lock */ = {
+		C244A1980765CABEF729819D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CollectionUpdateExample/Pods-CollectionUpdateExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Anchors/Anchors.framework",
+				"${BUILT_PRODUCTS_DIR}/Dropdowns/Dropdowns.framework",
+				"${BUILT_PRODUCTS_DIR}/Omnia/Omnia.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Anchors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dropdowns.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Omnia.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CollectionUpdateExample/Pods-CollectionUpdateExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1E8F6F1DB847F9CAAE389AB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,7 +336,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DD1033BB6474603CE7FC9AEC /* [CP] Check Pods Manifest.lock */ = {
+		F466641B8904DC6B8BDEE9B9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -337,21 +352,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE5849C53D3A1023DE58C998 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DragAndDrop/Pods-DragAndDrop-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -528,7 +528,7 @@
 		};
 		D240E1051FC99A20000AB5AB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C699D9722DC23F2DA10748BB /* Pods-CollectionUpdateExample.debug.xcconfig */;
+			baseConfigurationReference = 3AF4DD127E5DDDA64D0DEE7D /* Pods-CollectionUpdateExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,7 +543,7 @@
 		};
 		D240E1061FC99A20000AB5AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AAD352FE810D39D1A48A01F /* Pods-CollectionUpdateExample.release.xcconfig */;
+			baseConfigurationReference = B8D02EE87A30CC320FB4D14A /* Pods-CollectionUpdateExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -558,7 +558,7 @@
 		};
 		D240E11B1FC99A3F000AB5AB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01B022C39E8131ACE5D1DF6B /* Pods-DragAndDrop.debug.xcconfig */;
+			baseConfigurationReference = 489616F230A012BADB8D1176 /* Pods-DragAndDrop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -573,7 +573,7 @@
 		};
 		D240E11C1FC99A3F000AB5AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4055B2CEF9C000C98056640 /* Pods-DragAndDrop.release.xcconfig */;
+			baseConfigurationReference = BD24F6C9EA73C4531FE8E0AD /* Pods-DragAndDrop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

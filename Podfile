@@ -3,7 +3,7 @@ use_frameworks!
 
 pod 'Anchors'
 pod 'Omnia', git: 'https://github.com/onmyway133/Omnia'
-pod 'Dropdown', git: 'https://github.com/hyperoslo/Dropdown'
+pod 'Dropdowns', git: 'https://github.com/hyperoslo/Dropdowns'
 
 target 'CollectionUpdateExample'
 target 'DragAndDrop'

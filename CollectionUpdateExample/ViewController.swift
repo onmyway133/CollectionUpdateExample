@@ -1,24 +1,24 @@
 import UIKit
 import Anchors
 import Omnia
-import Dropdown
+import Dropdowns
 
 class ViewController: UIViewController {
 
   let collectionController = CollectionController()
 
   enum Action: Int {
-    case home
+    case reset
     case insert
     case delete
     case mixWrong
     case mixRight
   }
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
 
-    omnia_add(chilController: collectionController)
+    omnia_add(childController: collectionController)
     activate(
       collectionController.view.anchor
         .edges.equal.to(view.safeAreaLayoutGuide.anchor)
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     collectionController.update(items: Array(0..<100).map(String.init))
 
     // dropdown
-    let items = ["home", "insert", "delete", "mix wrong", "mix right"]
+    let items = ["reset", "insert", "delete", "mix wrong", "mix right"]
     let titleView = TitleView(
       navigationController: navigationController!,
       title: "home",
@@ -38,8 +38,8 @@ class ViewController: UIViewController {
 
     titleView?.action = { [weak self] index in
       switch Action(rawValue: index)! {
-      case .home:
-        self?.home()
+      case .reset:
+        self?.reset()
       case .insert:
         self?.insert()
       case .delete:
@@ -52,11 +52,12 @@ class ViewController: UIViewController {
     }
 
     navigationItem.titleView = titleView
+    reset()
   }
 
   // MARK: Logic
 
-  func home() {
+  func reset() {
     collectionController.update(items: Array(0..<5).map(String.init))
   }
 

@@ -12,7 +12,7 @@ class ViewController: UIViewController, UICollectionViewDropDelegate, UICollecti
     super.viewDidLoad()
 
     [leftController, rightController].forEach {
-      omnia_add(chilController: $0)
+      omnia_add(childController: $0)
       $0.collectionView.dragDelegate = self
       $0.collectionView.dropDelegate = self
     }
