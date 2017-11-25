@@ -7,14 +7,6 @@ class ViewController: UIViewController {
 
   let collectionController = CollectionController()
 
-  enum Action: Int {
-    case reset
-    case insert
-    case delete
-    case mixWrong
-    case mixRight
-  }
-
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
@@ -29,7 +21,11 @@ class ViewController: UIViewController {
     collectionController.update(items: Array(0..<100).map(String.init))
 
     // dropdown
-    let items = ["reset", "insert", "delete", "mix wrong", "mix right"]
+    let items = [
+      "reset", "insert after", "insert before",
+      "delete after", "delete before",
+      "mix wrong", "mix right"
+    ]
     let titleView = TitleView(
       navigationController: navigationController!,
       title: "home",
@@ -37,17 +33,8 @@ class ViewController: UIViewController {
     )
 
     titleView?.action = { [weak self] index in
-      switch Action(rawValue: index)! {
-      case .reset:
-        self?.reset()
-      case .insert:
-        self?.insert()
-      case .delete:
-        self?.delete()
-      case .mixWrong:
-        self?.mixWrong()
-      case .mixRight:
-        self?.mixRight()
+      DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        self?.handle(index: index)
       }
     }
 
@@ -57,16 +44,62 @@ class ViewController: UIViewController {
 
   // MARK: Logic
 
+  func handle(index: Int) {
+    switch index {
+    case 0:
+      self.reset()
+    case 1:
+      self.insertAfter()
+    case 2:
+      self.insertBefore()
+    case 3:
+      self.deleteAfter()
+    case 4:
+      self.deleteBefore()
+    case 5:
+      self.mixWrong()
+    case 6:
+      self.mixRight()
+    default:
+      break
+    }
+  }
+
   func reset() {
-    collectionController.update(items: Array(0..<5).map(String.init))
+    collectionController.update(items: ["a", "b", "c", "d", "e", "f"])
   }
 
-  func insert() {
-
+  func insertAfter() {
+    collectionController.items.append(contentsOf: ["g", "h", "i"])
+    let indexPaths = Array(6...8).map { IndexPath(item: $0, section: 0) }
+    collectionController.collectionView.insertItems(at: indexPaths)
   }
 
-  func delete() {
+  func insertBefore() {
+    collectionController.items.insert("g", at: 0)
+    collectionController.items.insert("h", at: 1)
+    collectionController.items.insert("i", at: 2)
 
+    let indexPaths = Array(0...2).map { IndexPath(item: $0, section: 0) }
+    collectionController.collectionView.insertItems(at: indexPaths)
+  }
+
+  func deleteAfter() {
+    collectionController.items.removeLast()
+    collectionController.items.removeLast()
+    collectionController.items.removeLast()
+
+    let indexPaths = Array(3...5).map { IndexPath(item: $0, section: 0) }
+    collectionController.collectionView.deleteItems(at: indexPaths)
+  }
+
+  func deleteBefore() {
+    collectionController.items.removeFirst()
+    collectionController.items.removeFirst()
+    collectionController.items.removeFirst()
+
+    let indexPaths = Array(0...2).map { IndexPath(item: $0, section: 0) }
+    collectionController.collectionView.deleteItems(at: indexPaths)
   }
 
   func mixWrong() {
