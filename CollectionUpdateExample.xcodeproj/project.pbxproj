@@ -267,11 +267,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CollectionUpdateExample/Pods-CollectionUpdateExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Anchors/Anchors.framework",
+				"${BUILT_PRODUCTS_DIR}/Dropdown/Dropdown.framework",
 				"${BUILT_PRODUCTS_DIR}/Omnia/Omnia.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Anchors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dropdown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Omnia.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,11 +289,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DragAndDrop/Pods-DragAndDrop-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Anchors/Anchors.framework",
+				"${BUILT_PRODUCTS_DIR}/Dropdown/Dropdown.framework",
 				"${BUILT_PRODUCTS_DIR}/Omnia/Omnia.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Anchors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dropdown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Omnia.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,24 +1,32 @@
 PODS:
   - Anchors (2.2.1)
+  - Dropdown (1.0.0)
   - Omnia (1.0.0)
 
 DEPENDENCIES:
   - Anchors
+  - Dropdown (from `https://github.com/hyperoslo/Dropdown`)
   - Omnia (from `https://github.com/onmyway133/Omnia`)
 
 EXTERNAL SOURCES:
+  Dropdown:
+    :git: https://github.com/hyperoslo/Dropdown
   Omnia:
     :git: https://github.com/onmyway133/Omnia
 
 CHECKOUT OPTIONS:
+  Dropdown:
+    :commit: 5ed65a3dcdbf4bf34bf25c471fa5c914e0ed48f5
+    :git: https://github.com/hyperoslo/Dropdown
   Omnia:
     :commit: 8ce2c3911c8e1f6b917d5993126508833c8279b8
     :git: https://github.com/onmyway133/Omnia
 
 SPEC CHECKSUMS:
   Anchors: c1dd44c918ec9fb331e1f786546950e36a50a337
+  Dropdown: 58611ba14f37143e16c6d4f05dec7787a6710d65
   Omnia: c682586a0146ce8909d9adfa8c6ebdc3c5a40d12
 
-PODFILE CHECKSUM: b0ff26be019c4eca2a594870eef93b7d9e83285d
+PODFILE CHECKSUM: 408838a83c43b5ce5dedded5c2bc802541b47ace
 
 COCOAPODS: 1.3.1
