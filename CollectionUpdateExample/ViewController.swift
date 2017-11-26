@@ -22,12 +22,12 @@ class ViewController: UIViewController {
 
     // dropdown
     let items = [
-      "reset", "insert after", "insert before",
-      "delete after", "delete before",
-      "delete insert after", "delete insert before",
-      "delete before insert after",
-      "insert delete after", "insert delete before",
-      "insert after delete before"
+      "reset", "1) insert after", "2) insert before",
+      "3) delete after", "4) delete before",
+      "5) delete insert after", "6) delete insert before",
+      "7) delete before insert after",
+      "8) insert delete after", "9) insert delete before",
+      "10) insert after delete before"
     ]
 
     let titleView = TitleView(
