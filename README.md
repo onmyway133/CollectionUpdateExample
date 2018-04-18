@@ -10,6 +10,7 @@
 - Demo drag and drop in `UICollectionView`
 - Demo how batch insertions, deletions works in `UITableView` and `UICollectionView`
 - Demo [DeepDiff](https://github.com/onmyway133/DeepDiff)
+- Tutorial [A better way to update UICollectionView data in Swift with diff framework](https://medium.com/flawless-app-stories/a-better-way-to-update-uicollectionview-data-in-swift-with-diff-framework-924db158db86)
 
 ## Author
 
